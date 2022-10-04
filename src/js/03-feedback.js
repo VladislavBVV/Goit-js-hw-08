@@ -22,8 +22,8 @@ const load = (key) => {
   }
 };
 
-// console.log(formRef.elements.email);
-// console.log(formRef.elements.message);
+console.log(formRef.elements.email);
+console.log(formRef.elements.message);
 
 initPage();
 
