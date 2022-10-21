@@ -67,11 +67,11 @@ formRef.addEventListener("input", throttledOnFormInput);
 
 function initPage() {
   const saveData = load(LOCAL_STORAGE_KEY);
-  console.log(saveData);
+  // console.log(saveData);
   if (!saveData) {
     return;
   }
-      Object.entries(parseData).forEach(([name, value]) => {
+      Object.entries(saveData).forEach(([name, value]) => {
           formRef.elements[name].value = value
       });
   // try {
